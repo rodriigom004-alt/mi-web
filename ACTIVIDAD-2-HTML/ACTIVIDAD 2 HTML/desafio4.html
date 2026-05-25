@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gravity Falls Universe</title>
+
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: 'segoe UI' , sans-serif;
+                background: #0f172a;
+                 color: white;
+
+            }
+
+            nav{
+                background: #020617;
+                padding: 15px 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 0;
+
+             }
+             nav h1{
+                color: #22c55e;
+             }
+             nav ul{
+                list-style: none;
+                display: flex;
+                gap: 25px;
+             }
+             nav a:hover{
+                color: #22c55e;
+                text-shadow: 0 0 10px #22c55e;
+                
+             }
+             .hero{
+                height: 90vh;
+                background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8)), url("gravity.jpg");
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+             }
+
+             @keyframes aparecer{
+                from{opacity: 0; transform: translateY(40px);}
+                to{opacity: 1; transform: translateY(0);}
+             }
+
+
+
+             .hero h2{
+                font: 60px;
+             }
+
+             .hero p{
+                margin-top:15px;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+             }
+             section{
+                padding: 70px 40px;
+                max-width: 1200px;
+                margin: auto;
+
+             }
+             
+             .cards{
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+             }
+             .card{
+                background: #1e293b;
+                width: 250px;
+                border-radius: 15px;
+                overflow: hidden;
+                transition: 0.3s;
+             }
+             .card:hover{
+                transform: translateY(-10px);
+
+
+             }
+             .card img{
+                width: 100px;
+                height: auto;
+                object-fit: cover;
+                background: #1e293b;
+             }
+
+             .card h3{
+                padding: 15px;
+                color: #22c55e;
+
+             }
+             .card p{
+                padding: 0 15px 20px;
+
+             }
+
+             table{
+                width: 100px;
+                border-collapse: collapse;
+                margin-top: 30px;
+
+             }
+             th{
+                background: 12px;
+                padding: 15px;
+
+
+             }
+             td{
+                padding: 12px;
+                background: #1e293b;
+                text-align: center;
+             }
+             tr:hover td{
+                background: #020617;
+                text-align: center;
+                padding: 25px;
+                margin-top: 40px;
+
+             }
+
+         </style>
+         </head>
+
+         <body>
+            <nav>
+                <h1>Gravity Falls</h1>
+                <ol>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                    <li><a href="#tabla">Datos</a></li>
+                </ol>
+            </nav>
+
+
+            <div class="hero">
+                <div>
+                    <h2>Bienvenido a Gravity Falls</h2>
+                    <p>Un pueblo lleno de misterios, criaturas y aventuras</p>
+                </div>
+            </div>
+
+            <section id="historia">
+                <h2>Historia</h2>
+                <br>
+                <p>
+                    Los gemelos Dipper y Mabel Pines pasan el verano con su tio Stan en Gravity Falls, un pequeño pueblo donde ocurren fenomenos paranormales.<br>
+                    Durante su estadia descubren diarios secretos, criaturas sobrenaturales y un villano interdimensional. 
+                </p>
+            </section>
+
+            <section id="personajes">
+                <h2>Personajes Principales</h2>
+                <br>
+
+                <div class="card">
+                    <img src="dipper-pines.jpg">
+                    <h3>Dipper Pines</h3>
+                    <p>Curioso, inteligente y obsesionado con los misterios.</p>
+                </div>
+                <div class="card">
+                    <img src="mabel.jpg">
+                    <h3>Mabel Pines</h3>
+                    <p>Optimista, divertida y amante de los sueteres.</p>
+                </div>
+
+                <div class="card">
+                    <img src="tiostan.jpg">
+
+                    <h3>Stan Pines</h3>
+                    <p>Dueño de la Cabaña del Misterio y lleno de secretos.</p>
+
+                </div>
+                <div class="card">
+                    <img src="bill.jgp.webp">
+                    <h3>Bill Cipher</h3>
+                    <p>Entidad interdimencional caotica y peligrosa.</p>
+
+                </div>
+            
+            </section>
+            <section id="tabla">
+                <h2>Datos Personales</h2>
+
+                <table>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Rol</th>
+                        <th>Tipo</th>
+                    </tr>
+
+                    <tr>
+                        <td>Dipper</td>
+                        <td>Protagonista</td>
+                        <td>Humano</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mabel</td>
+                        <td>Protagonista</td>
+                        <td>Humano</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stan</td>
+                        <td>Mentor</td>
+                        <td>Humano</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bill Cipher</td>
+                        <td>Villano</td>
+                        <td>Entidad</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Opinion Personal</h2>
+                <br>
+                <p>
+                    Gravity Falls destaca por su narrativa inteligente, misterios ocultos y desarrollo de personajes. <br> 
+                    Es una de las series animadas mas completas y creativas.
+                </p>
+
+            </section>
+
+            <footer>
+                Pagina creada por un estudiante de Analisis de Sistemas 🚀
+            </footer>
+            
+        </body>
+
+</html>

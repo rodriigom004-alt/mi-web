@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juan Valdez Cafe | Menu Premium</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+
+            body{
+                font-family: Georgia, serif;
+                line-height: 1.6;
+                color: #333;
+                background: linear-gradient(135deg,#1a1a1a 0%,#2d1b14 50%,#8B0000 100%);
+
+
+            }
+
+            header{
+                background: linear-gradient(135deg,#D81E05,#B71C1C);
+                color:white;
+                text-align:center;
+                padding:3rem 2rem;
+                box-shadow:0 4px rgba(216,30,5,0.3);
+            }
+
+            .logo h1{
+
+                font-size: 3rem;
+            }
+            .logo p {
+                font-size:  1.2rem;
+
+            }
+            .container{
+
+                max-width:1200px;
+                margin: auto;
+                padding:3rem 2rem;
+                display:grid;
+                grid-template-columns:2fr 1fr;
+                gap:3rem;
+
+            }
+            .menu{
+
+                background: white;
+                padding: 3rem;
+                border-radius: 20px;
+                box-shadow:0 20px 40px rgba(0,0,0,0.3);
+            }
+            .menu h2{
+                text-align:center;
+                color:#D81E05;
+                margin-bottom:2rem;
+
+            }
+            .plato{
+                display:flex;
+                align-items:center;
+                margin-bottom:2rem;
+                padding:1.5rem;
+                border-radius:15px;
+                background: #f4f4f4;
+                transition:0.3s;
+
+            }
+            .plato:hover{
+                transform: scale(1.03);
+
+            }
+            .plato img{
+                width: 130px;
+                border-radius: 10px;
+                margin-right: 1.5rem
+            }
+            .precio{
+                margin-left: auto;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #D81E05;
+
+            }
+            .info{
+                display:flex;
+                flex-direction: column;
+                gap:2rem;
+            }
+            .horarios,.ubicacion{
+                background: white;
+                padding: 2rem;
+                border-radius: 15px;
+                text-align:center;
+                box-shadow:0 10px 25px rgba(0,0,0,0.2);
+                }
+
+            @media(max-width:768px){
+                .container{
+                    grid-template-columns: 1fr;
+                }
+                .plato{
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .plato img{
+                    margin:0 0 1rem 0;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>☕ Juan Valdez Cafe</h1>
+                <p>El sabor auntentico de colombia</p>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <main>
+                <section class="menu">
+                    <h2>☕ Nuestras Especialidades</h2>
+
+                    <div class="plato">
+                        <img src="https://images.unsplash.com/photo-1494314671902-399b18174975?w=300">
+                    <div>
+                        <h3>Cafe Colombiano Supremo</h3>
+                        <p>100% Arabica de origen, aroma intenso</p>
+                    </div>
+                <span class="precio">$18.000</span>
+             </div>
+
+             <div class="plato">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&fit=crop&auto=format">
+                 <div>
+                    <h3>Capuccino Clasico</h3>
+                    <p>Espresso con leche vaporizada</p>
+                 </div>
+
+                <span class="precio">$22.000</span>
+             </div>
+
+             <div class="plato">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300">
+                <div>
+             <h3>Frappe Colombiano</h3>
+             <p>Cafe helado con crema batida</p>
+             </div>
+             <span class="precio">$25.000</span>
+             </div>
+
+             <div class="plato">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300">
+             <div>
+             <h3>Tarta de Chocolate</h3>
+             <p>Chocolate 70% cacao con cafe</p>
+             </div>
+             <span class="precio">$28.000</span>
+             </div>
+
+             </section>
+
+             </main>
+
+
+             <aside class="info">
+                <div class="horarios">
+                <h3>🕒 Horarios</h3>
+                <p>Lunes a Domingo<br>07:00 - 23:00</p>
+                </div>
+
+                <div class="ubicacion">
+                    <h3>📍 Shopping del Sol</h3>
+                    <p>Asuncion,Paraguay<br>☎ (021) 555-777</p>
+                </div>
+             </aside>
+
+
+        </div>
+
+    </body>
+
+</html>
