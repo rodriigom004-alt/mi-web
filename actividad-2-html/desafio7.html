@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mundo del Desarrollo Web</title>
+
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background: #0b1f3a;
+                color: #333;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            header{
+                width: 100%;
+                background: #0a66c2;
+                color: white;
+                padding: 40px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .titulo-principal{
+                font-size: 38px;
+                letter-spacing: 2px;
+            }
+            .subtitulo{
+                margin-top: 10px;
+                font-size: 20px;
+                opacity: 0.9;
+            }
+            nav{
+                background: #083d77;
+                padding: 10px;
+                text-align: center;
+            }
+            nav a{
+                color: white;
+                margin: 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            section{
+                width: 80%;
+                max-width: 900px;
+                margin: auto;
+                background: white;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h2{
+                color: #0a66c2;
+            }
+            img{
+                width: 100%;
+                border-radius: 10px;
+                margin: 15px 0;
+
+            }
+            .boton{
+                background: #0a66c2;
+                color: white;
+                border: nome;
+                padding: 12px 20px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            footer{
+                text-align: center;
+            padding: 20px;
+            background: #083d77;
+            color: white;
+            margin-top: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+
+        <h1>INVESTIGANDO EL MUNDO DEL DESAROLO WEB</h1>
+        <p>Frontend, Backend, Full Stack</p>
+        </header>
+
+        <nav>
+            <a href="#frontend">Frontend</a>
+            <a href="#backend">Backend</a>
+            <a href="#fullstack">Full Stack</a>
+            <a href="#tecnologias">Tenologias</a>
+            <a href="#salario">Salario</a>
+        </nav>
+
+        <section id="frontend">
+            <h2>💻 Desarrollador Frontend</h2>
+            <img src="frontend.png">
+            <p>
+                El desarrollador Frontend se encarga de la parte visual de una página web.
+                Es todo lo que el usuario ve y con lo que interactúa.
+            </p>
+            <ul>
+                <li>Diseño de interfaces</li>
+                <li>Experiencia de usuario (UX)</li>
+                <li>Adaptacion a celulares (Resposive)</li>
+            </ul>
+
+            <h3>Tecnologias principales</h3>
+            <p>HTML, CSS, JavaScript, React, Vue</p>
+        </section>
+
+        <section id="backend">
+        <h2>⚙️ Desarrollador Backend</h2>
+        <img src="backend.png">
+        <p>
+            El desarrollador Backend trabaja en el servidor.  
+            Se encarga de la lógica, bases de datos y seguridad.
+        </p>
+        <ul>
+            <li>Conexión con bases de datos</li>
+            <li>Autenticación de usuarios</li>
+            <li>APIs</li>
+        </ul>
+        <h3>Tecnologias principales</h3>
+        <p>Node.Js, Python, PHP, Java, MySQL</p>
+        </section>
+
+        <section id="fullstack">
+            <h2>🧠 Desarrollador Full Stack</h2>
+            <img src="fullstack.jpg">
+            <p>
+                Un desarrollador Full Stack domina tanto Frontend como Backend.
+                Puede crear una web completa desde cero.
+            </p>
+
+            <button class="boton" onclick="mostrarMensaje()">¿Por que es tan demandado?</button>
+            <p id="mensaje"></p>
+        </section>
+
+        <section id="tecnologias">
+            <h2>🚀 Tecnologías actuales</h2>
+            <img src="tecnologia.jgp.webp">
+
+            <ul>
+                <li>React y Angular</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>MongoDB</li>
+                <li>Git y GitHub</li>
+                <li>Cloud Computing (AWS)</li>
+            </ul>
+        </section>
+
+        <section id="salario">
+            <h2>💰¿Cuánto gana un desarrollador web?</h2>
+            <img src="salarios.webp">
+            <p>
+                Los Salarios varian segun experiencia:
+            </p>
+
+            <ul>
+                <li>Junior: 600 - 1200 USD</li>
+                <li>Semi Senior: 1200 - 2500 USD</li>
+                <li>Senior: 3000 - 6000+ USD</li>
+            </ul>
+            
+            <button class="boton" onclick="alert('¡El desarrollo web es una carrera con mucho futuro! 🚀')">
+            Motivame
+            </button>
+            </section>
+
+            <footer>
+                <P>Trabajo realizado por estudiante de Desarrollo web</P>
+            </footer>
+
+            <script>
+            function mostrarMensaje(){
+            document.getElementById("mensaje").innerHTML =
+            "Porque las empresas buscan profesionales que puedan hacer TODO el desarrollo.";
+            }
+            </script>
+
+            </body>
+        </html>
+
+

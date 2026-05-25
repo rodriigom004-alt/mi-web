@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don vito Py</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg,#0f9b0f,#38ef7d);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        width: 90%;
+        max-width: 900px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        animation: aparecer 1s ease;
+
+    }
+    @keyframes aparecer{
+        from{
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to{
+            opacity: 0;
+            transform: translateY(0);
+        }
+    }
+
+    header{
+        background: linear-gradient(90deg,#0f9b0f,38ef7d);
+        color: wheat;
+        text-align: center;
+        padding: 30px;
+    }
+    header img{
+        margin-top: 15px;
+        border-radius: 15px;
+
+    }
+    .container{
+        padding: 30px;
+
+    }
+    .card{
+        background: #fff7f2;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        transition: 0.3s;
+
+    }
+    .card:hover{
+        transform: scale(1.03);
+    }
+
+    h2{
+        color:#cc0000;
+        margin-bottom: 10px;
+    }
+    ol{
+        padding-left: 20px;
+        line-height: 1.8;
+    }
+    .contacto {
+        background: linear-gradient(135deg,#ffe0e0,#ffd0b3);
+
+    }
+    footer{
+        background: #222;
+        color:white;
+        text-align: center;
+        padding: 15px;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+    <h1>Don vito PY</h1>
+    <img src="donvito.jpg" alt="Logo De Don vito Py" width="300">
+
+    <p>Comida hecha con amor ❤️</p>
+         
+  </header>
+  <div class="container">
+
+    <div class="card">
+        <h2>📖 Sobre nosotros</h2>
+        <p>
+        Don Vito PY es una empresa gastronómica paraguaya dedicada a ofrecer comidas deliciosas y atención de calidad.
+        Nuestro fuerte son las empanadas de diferentes sabores, además de croquetas, tartas y milanesas.
+        Nos destacamos por la calidad y la satisfacción de nuestros clientes.
+        </p>
+    </div>
+
+    <div class="card">
+    <h2>🍴Productos y servicios princiapales</h2>
+    <ol>
+        <li>Empanadas de diferentes sabores</li>
+        <li>Croquetas</li>
+        <li>Tartas</li>
+        <li>Milanesas</li>
+    </ol>
+      </div>
+
+      <div class="card">
+
+    <h2>Ubicacion</h2>
+    <p>Direccion: Av. Mariscal Lopez 1234, Asuncion, Paraguay</p>
+    </div>
+
+    <div class="card contacto">
+        <h2>📞 Contacto</h2>
+        <p>WhatsAapp: 0976 283 102</p>
+        <p>Instagram: @donvitopy</p>
+    </div>
+    </div>
+
+    <footer>
+        © 2026 Don Vito PY
+    </footer>
+
+</body>
+</html>
+
+
+        
